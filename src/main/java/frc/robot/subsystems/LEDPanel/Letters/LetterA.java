@@ -6,5 +6,15 @@ package frc.robot.subsystems.LEDPanel.Letters;
 
 /** Add your docs here. */
 public class LetterA extends LetterBase {
-
+    public LetterA() {
+    m_leds = new int[][] {
+        {1, 0, 0, 0, 0, 1},
+        {0, 1, 0, 0, 0, 1},
+        {0, 0, 1, 0, 1, 0},
+        {0, 0, 0, 1, 0, 0},
+        {0, 1, 1, 0, 1, 0},
+        {1, 0, 0, 0, 0, 1},
+        
+    };
+}
 }

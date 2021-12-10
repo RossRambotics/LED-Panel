@@ -105,6 +105,7 @@ public class Robot extends TimedRobot {
 
     System.out.println("In testInit");
     LetterA l = new LetterA();
+    l.print();
   }
 
   /** This function is called periodically during test mode. */
