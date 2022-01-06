@@ -26,6 +26,8 @@ public class LetterFactory {
                 return new LetterC();
             case 'D':
                 return new LetterD();
+            case 'E':
+                return new LetterE();
         }
         return null;
     }

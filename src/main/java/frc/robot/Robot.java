@@ -105,11 +105,12 @@ public class Robot extends TimedRobot {
     CommandScheduler.getInstance().cancelAll();
 
     System.out.println("In testInit");
-    LetterBase[] l = LetterFactory.getLetters("ABCD");
+    LetterBase[] l = LetterFactory.getLetters("ABCDE");
     l[0].print();
     l[1].print();
     l[2].print();
     l[3].print();
+    l[4].print();
   }
 
   /** This function is called periodically during test mode. */
