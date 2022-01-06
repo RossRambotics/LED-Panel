@@ -28,7 +28,17 @@ public class LetterFactory {
                 return new LetterD();
             case 'E':
                 return new LetterE();
-        }
+            case 'F':
+                return new LetterF();
+            case 'G':
+                return new LetterG();
+            case 'H':
+                return new LetterH();
+            case 'I':
+                return new LetterI();
+            case 'J':
+                return new LetterJ();
+                    }
         return null;
     }
 }
