@@ -38,6 +38,9 @@ public class LetterFactory {
                 return new LetterI();
             case 'J':
                 return new LetterJ();
+            case '_':
+                return new Letter_();
+
                     }
         return null;
     }
