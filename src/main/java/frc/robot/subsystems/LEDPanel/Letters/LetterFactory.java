@@ -40,6 +40,10 @@ public class LetterFactory {
                 return new LetterJ();
             case '_':
                 return new Letter_();
+            case 'K':
+                return new LetterK();
+            case 'L':
+                return new LetterL();
 
                     }
         return null;
