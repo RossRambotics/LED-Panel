@@ -44,6 +44,14 @@ public class LetterFactory {
                 return new LetterK();
             case 'L':
                 return new LetterL();
+            case 'M':
+                return new LetterM();
+            case 'N':
+                return new LetterN();
+            case 'O':
+                return new LetterO();
+            case 'P':
+                return new LetterP();
 
                     }
         return null;
