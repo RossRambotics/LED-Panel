@@ -3,6 +3,7 @@
 // the WPILib BSD license file in the root directory of this project.
 
 package frc.robot.subsystems.LEDPanel.Letters;
+import java.util.*;
 
 /** Add your docs here. */
 public class LetterFactory {
@@ -16,7 +17,21 @@ public class LetterFactory {
        
         return letters;
    }
-    public static LetterBase getLetter(char l){
+   
+   public static List<LetterBase> getLetterList(String phrase){
+
+        List<LetterBase> list=new ArrayList<LetterBase>();
+        
+        int length = phrase.length();
+
+        for (int c = 0; c < length; c++){
+            list.add(getLetter(phrase.charAt(c)));
+        }
+       
+        return list;
+   }
+   
+   public static LetterBase getLetter(char l){
         switch (l) {
             case 'A':
                 return new LetterA();

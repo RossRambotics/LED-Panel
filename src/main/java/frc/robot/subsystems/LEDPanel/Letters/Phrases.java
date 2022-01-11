@@ -3,6 +3,28 @@
 // the WPILib BSD license file in the root directory of this project.
 
 package frc.robot.subsystems.LEDPanel.Letters;
+import java.util.*;
 
 /** Add your docs here. */
-public class Phrases {}
+public class Phrases {
+
+    List<LetterBase>phrase;
+    public Phrases(String p){
+
+        phrase = LetterFactory.getLetterList(p);
+
+    }
+
+    public void print(){
+
+        ListIterator<LetterBase> itr=phrase.listIterator();
+        while(itr.hasNext()){
+
+            System.out.println("index:" +itr.nextIndex()+ "value: ");
+            itr.next().print();
+
+        }
+
+    }
+}
+
