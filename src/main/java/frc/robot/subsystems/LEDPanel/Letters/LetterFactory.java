@@ -89,6 +89,8 @@ public class LetterFactory {
                 return new LetterZ();
             case '1':
                 return new Letter1();
+            case '2':
+                return new Letter2();
 
                     }
         return null;
