@@ -134,7 +134,7 @@ public class Robot extends TimedRobot {
     l[25].print();
     l[26].print(); */
 
-   Phrases p = new Phrases("TEST");
+   Phrases p = new Phrases("TEST1");
     p.print();
 
   } 
