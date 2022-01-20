@@ -7,7 +7,8 @@ package frc.robot;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
-import frc.robot.subsystems.LEDPanel.Letters.LetterA;
+import frc.robot.subsystems.LEDPanel.Letters.*;
+
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -104,9 +105,39 @@ public class Robot extends TimedRobot {
     CommandScheduler.getInstance().cancelAll();
 
     System.out.println("In testInit");
-    LetterA l = new LetterA();
-    l.print();
-  }
+    /*LetterBase[] l = LetterFactory.getLetters("ABCDEFGHIJ_KLMNOPQRSTUVWXYZ");
+    l[0].print();
+    l[1].print();
+    l[2].print();
+    l[3].print();
+    l[4].print();
+    l[5].print();
+    l[6].print();
+    l[7].print();
+    l[8].print();
+    l[9].print();
+    l[10].print();
+    l[11].print();
+    l[12].print();
+    l[13].print();
+    l[14].print();
+    l[15].print();
+    l[16].print();
+    l[17].print();
+    l[18].print();
+    l[19].print();
+    l[20].print();
+    l[21].print();
+    l[22].print();
+    l[23].print();
+    l[24].print();
+    l[25].print();
+    l[26].print(); */
+
+   Phrases p = new Phrases("TEST3");
+    p.print();
+
+  } 
 
   /** This function is called periodically during test mode. */
   @Override
