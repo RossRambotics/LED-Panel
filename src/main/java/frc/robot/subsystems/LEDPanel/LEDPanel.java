@@ -6,6 +6,7 @@ package frc.robot.subsystems.LEDPanel;
 
 import edu.wpi.first.wpilibj.AddressableLED;
 import edu.wpi.first.wpilibj.AddressableLEDBuffer;
+import edu.wpi.first.wpilibj.util.Color;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import frc.robot.subsystems.LEDPanel.Letters.Phrases;
 
@@ -48,7 +49,22 @@ public class LEDPanel extends SubsystemBase {
       m_index = 0;
     }
 
-    m_ledBuffer.setRGB(m_index, 255, 0, 0);
+    // m_ledBuffer.setRGB(m_index, 255, 0, 0);
+    Phrases p = new Phrases("X");
+    Color color[][] = p.getColors();
+
+    int col = 0;
+    int row = 0;
+    int i = 0;
+
+    for (col = 0; col < 7; col++) {
+      for (row = 0; row < 8; row++) {
+        i = (row * 32) + col;
+        // System.out.println("i: " + i + " col: " + col + " row: " + row);
+        m_ledBuffer.setLED(i, color[col][row]);
+      }
+    }
+
     m_led.setData(m_ledBuffer);
   }
 
