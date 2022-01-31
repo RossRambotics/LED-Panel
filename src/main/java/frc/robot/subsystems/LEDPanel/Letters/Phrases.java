@@ -43,7 +43,7 @@ public class Phrases {
                 colors[col][row] = Color.kBlack;
             }
         }
-
+        // test
         colors[0][0] = Color.kBlue;
         colors[1][0] = Color.kBlue;
         colors[4][0] = Color.kBlue;
