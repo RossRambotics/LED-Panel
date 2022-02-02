@@ -44,30 +44,34 @@ public class Phrases {
             }
         }
         // test
-        colors[0][0] = Color.kBlue;
-        colors[1][0] = Color.kBlue;
-        colors[4][0] = Color.kBlue;
-        colors[5][0] = Color.kBlue;
-        colors[0][1] = Color.kBlue;
-        colors[1][1] = Color.kBlue;
-        colors[4][1] = Color.kBlue;
-        colors[5][1] = Color.kBlue;
-        colors[1][2] = Color.kBlue;
-        colors[2][2] = Color.kBlue;
-        colors[3][2] = Color.kBlue;
-        colors[4][2] = Color.kBlue;
-        colors[1][3] = Color.kBlue;
-        colors[2][3] = Color.kBlue;
-        colors[3][3] = Color.kBlue;
-        colors[4][3] = Color.kBlue;
-        colors[0][4] = Color.kBlue;
-        colors[1][4] = Color.kBlue;
-        colors[4][4] = Color.kBlue;
-        colors[5][4] = Color.kBlue;
-        colors[0][5] = Color.kBlue;
-        colors[1][5] = Color.kBlue;
-        colors[4][5] = Color.kBlue;
-        colors[5][5] = Color.kBlue;
+        colors[0][0] = Color.kOrange;
+        colors[1][0] = Color.kOrange;
+        colors[2][0] = Color.kOrange;
+        colors[3][0] = Color.kOrange;
+        colors[4][0] = Color.kOrange;
+        colors[1][1] = Color.kOrange;
+        colors[0][1] = Color.kOrange;
+        colors[5][1] = Color.kOrange;
+        colors[4][1] = Color.kOrange;
+        colors[0][2] = Color.kOrange;
+        colors[1][2] = Color.kOrange;
+        colors[2][2] = Color.kOrange;
+        colors[3][2] = Color.kOrange;
+        colors[4][2] = Color.kOrange;
+        colors[0][3] = Color.kOrange;
+        colors[1][3] = Color.kOrange;
+        colors[4][3] = Color.kOrange;
+        colors[5][3] = Color.kOrange;
+        colors[0][4] = Color.kOrange;
+        colors[1][4] = Color.kOrange;
+        colors[5][4] = Color.kOrange;
+        colors[4][4] = Color.kOrange;
+        colors[1][5] = Color.kOrange;
+        colors[0][5] = Color.kOrange;
+        colors[5][5] = Color.kOrange;
+        colors[4][5] = Color.kOrange;
+        colors[2][5] = Color.kOrange;
+        colors[3][5] = Color.kOrange;
         return colors;
 
     }
