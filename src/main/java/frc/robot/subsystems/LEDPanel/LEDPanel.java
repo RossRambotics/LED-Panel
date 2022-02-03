@@ -50,14 +50,15 @@ public class LEDPanel extends SubsystemBase {
     }
 
     // m_ledBuffer.setRGB(m_index, 255, 0, 0);
-    Phrases p = new Phrases("X");
+    Phrases p = new Phrases("TEST");
     Color color[][] = p.getColors();
 
     int col = 0;
     int row = 0;
     int i = 0;
 
-    for (col = 0; col < 7; col++) {
+    // TODO fix 14 to be a calc
+    for (col = 0; col < p.size() * 7; col++) {
       for (row = 0; row < 8; row++) {
         i = (row * 32) + col;
         // System.out.println("i: " + i + " col: " + col + " row: " + row);

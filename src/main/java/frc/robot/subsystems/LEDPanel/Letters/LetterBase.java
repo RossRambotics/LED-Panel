@@ -17,4 +17,9 @@ public abstract class LetterBase {
             System.out.println("");
         }
     }
+
+    public int[][] getLEDs() {
+        return m_leds;
+    }
+
 }
